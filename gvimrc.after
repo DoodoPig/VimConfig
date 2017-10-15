@@ -1,0 +1,23 @@
+colorscheme github
+
+"more natural splitting
+set splitbelow
+set splitright
+
+"map pane switching to faster keybindings
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+set guifont=Menlo:h13
+set visualbell t_vb=
+set clipboard=unnamed
+set mouse=a
+
+" Add keyboard shortcuts
+map <C-Tab> gt
+map <C-S-Tab> gT
+
+" start nerdTree on startup
+autocmd VimEnter * NERDTree
