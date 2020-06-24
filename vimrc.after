@@ -17,3 +17,6 @@ set mouse=a
 
 " start nerdTree on startup
 autocmd VimEnter * NERDTree
+
+"close vim if the only file open is NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
